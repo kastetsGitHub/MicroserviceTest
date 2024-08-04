@@ -33,3 +33,4 @@ D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceT
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceTest.genruntimeconfig.cache
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\ref\MicroserviceTest.dll
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceTest.sourcelink.json
+D:\Microservice\MicroserviceTest\MicroserviceTest\bin\Debug\net7.0\swaggerSpecification.json

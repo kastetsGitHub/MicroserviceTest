@@ -26,7 +26,7 @@
         </member>
         <member name="M:MicroserviceTest.Services.EquipmentDataService.LoadXDocumentAsync">
             <summary>
-            загрузка xml документа с сервера .."Debian 12" (необходим релевантный IPAddress)
+            загрузка xml документа с сервера .."Debian 12"
             </summary>
             <returns></returns>
         </member>

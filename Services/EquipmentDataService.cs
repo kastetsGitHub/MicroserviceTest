@@ -81,7 +81,7 @@ namespace MicroserviceTest.Services
         }
 
         /// <summary>
-        /// загрузка xml документа с сервера .."Debian 12"
+        /// загрузка xml документа с сервера .."Debian 12" (необходим релевантный IPAddress)
         /// </summary>
         /// <returns></returns>
         public async Task<XDocument> LoadXDocumentAsync()
