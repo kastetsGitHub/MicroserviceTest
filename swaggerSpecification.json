@@ -1,0 +1,87 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MicroserviceTest",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/equipment": {
+      "get": {
+        "tags": [
+          "Equipment"
+        ],
+        "summary": "Получить ID по названию оборудования",
+        "description": "*Пример запроса: \"Турбогенерат 1/Турбогенератор/Ротор/Скорость вращения/Датчик 2\"",
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "description": "Путь оборудования в дереве",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "уникальный идентификатор оборудования",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipment"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "отсутствует наименование оборудования в запросе",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "не правильно указан путь оборудования в дереве",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "значение оборудования по заданному пути отсутствует",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Equipment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Уникальный идентификатор оборудования",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Оборудование"
+      }
+    }
+  }
+}
