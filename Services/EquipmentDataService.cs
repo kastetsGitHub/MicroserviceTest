@@ -14,7 +14,7 @@ namespace MicroserviceTest.Services
         public EquipmentDataService(int serverPort)
         {
             _serverPort = serverPort;
-            _xmlLocalPath = @"D:\Microservice\MicroserviceTest\StorageData\EquipmentData.xml";
+            _xmlLocalPath = Path.Combine("", @"Assets\StorageData\EquipmentData.xml");
         }
 
         public async Task<ServiceResult<Equipment>> GetIDAsync(string xmlPath)

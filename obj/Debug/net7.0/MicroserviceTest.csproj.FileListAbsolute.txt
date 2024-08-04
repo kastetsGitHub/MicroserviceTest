@@ -32,3 +32,4 @@ D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\refint\Micros
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceTest.pdb
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceTest.genruntimeconfig.cache
 D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\ref\MicroserviceTest.dll
+D:\Microservice\MicroserviceTest\MicroserviceTest\obj\Debug\net7.0\MicroserviceTest.sourcelink.json
