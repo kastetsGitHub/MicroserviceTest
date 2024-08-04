@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "r4lfiKI8bJYSF3YAmOBwT4ZhZHd32Yvn3TSHUhhZdac=",
+  "Source": "MicroserviceTest",
+  "BasePath": "_content/MicroserviceTest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

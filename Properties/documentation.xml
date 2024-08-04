@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroserviceTest</name>
+    </assembly>
+    <members>
+        <member name="M:MicroserviceTest.Controllers.EquipmentController.#ctor(MicroserviceTest.Services.EquipmentDataService)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="equipmentDataService">Источник данных</param>
+        </member>
+        <member name="M:MicroserviceTest.Controllers.EquipmentController.GetEquipmentID(System.String)">
+            <summary>
+            Получить ID по названию оборудования
+            </summary>
+            <remarks>
+            *Пример запроса: "Турбогенерат 1/Турбогенератор/Ротор/Скорость вращения/Датчик 2"
+            </remarks>
+            <param name="path">Путь оборудования в дереве</param>
+            <returns></returns>
+            <response code="200"> уникальный идентификатор оборудования</response>
+            <response code="400"> отсутствует наименование оборудования в запросе </response>
+            <response code="404"> не правильно указан путь оборудования в дереве </response>
+            <response code="406"> значение оборудования по заданному пути отсутствует </response>
+        </member>
+        <member name="M:MicroserviceTest.Services.EquipmentDataService.LoadXDocumentAsync">
+            <summary>
+            загрузка xml документа с сервера .."Debian 12"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MicroserviceTest.View.Equipment">
+            <summary>
+            Оборудование
+            </summary>
+        </member>
+        <member name="P:MicroserviceTest.View.Equipment.ID">
+            <summary>
+            Уникальный идентификатор оборудования
+            </summary>
+        </member>
+    </members>
+</doc>
